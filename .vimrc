@@ -31,8 +31,7 @@ set softtabstop=4   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 set showmatch           " highlight matching [{()}]
 
-set background=dark
-colorscheme solarized
+colorscheme DevC++
 
 " CtrlP options
 let g:ctrlp_map = '<c-p>' "CtrlP Mapping
