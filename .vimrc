@@ -7,7 +7,11 @@ nnoremap E $
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
 
+" jj to Esc
 :imap jj <Esc>
+" hh to unhighlight matches
+:nnoremap hh :noh<CR>
+" Double tap CTRL+L to toggle line numbers
 :nmap <C-L><C-L> :set invnumber<CR>
 
 syntax enable           " enable syntax processing
@@ -30,7 +34,10 @@ colorscheme DevC++
 
 " CtrlP options
 let g:ctrlp_map = '<c-p>' "CtrlP Mapping
+let g:ctrlp_cmd = 'CtrlP'
+:nmap <C-T> <C-P>
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_show_hidden = 1
 
 " Move to the previous buffer with "gp"
 nnoremap gp :bp<CR>
