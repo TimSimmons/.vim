@@ -1,10 +1,5 @@
 execute pathogen#infect()
 
-:nnoremap j h
-:nnoremap k gj
-:nnoremap l gk
-:nnoremap ; l
-
 " move to beginning/end of line
 nnoremap B ^
 nnoremap E $
@@ -13,7 +8,7 @@ nnoremap E $
 nnoremap <leader>u :GundoToggle<CR>
 
 :imap jj <Esc>
-:nmap <C-N><C-N> :set invnumber<CR>
+:nmap <C-L><C-L> :set invnumber<CR>
 
 syntax enable           " enable syntax processing
 set number              " show line numbers
@@ -36,3 +31,20 @@ colorscheme DevC++
 " CtrlP options
 let g:ctrlp_map = '<c-p>' "CtrlP Mapping
 let g:ctrlp_working_path_mode = 'ra'
+
+" Move to the previous buffer with "gp"
+nnoremap gp :bp<CR>
+" Move to the next buffer with "gn"
+nnoremap gn :bn<CR>
+" Close the current buffer with "gd"
+nnoremap gd :bd<CR>
+" List all possible buffers with "gl"
+nnoremap gl :ls<CR>
+" List all possible buffers with "gb" and accept a new buffer argument [1]
+nnoremap gb :ls<CR>:b
+
+" Airline options
+set laststatus=2
+
+" dont save .netrwhist history
+let g:netrw_dirhistmax=0
