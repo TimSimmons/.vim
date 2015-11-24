@@ -30,12 +30,13 @@ set softtabstop=4   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 set showmatch           " highlight matching [{()}]
 
-colorscheme DevC++
+" colors
+set background=dark
+colorscheme tim
 
 " CtrlP options
 let g:ctrlp_map = '<c-p>' "CtrlP Mapping
 let g:ctrlp_cmd = 'CtrlP'
-:nmap <C-T> <C-P>
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_show_hidden = 1
 
@@ -49,6 +50,8 @@ nnoremap gd :bd<CR>
 nnoremap gl :ls<CR>
 " List all possible buffers with "gb" and accept a new buffer argument [1]
 nnoremap gb :ls<CR>:b
+" open a new tab with CTRL T
+nnoremap <C-T> :tabnew<CR>
 
 " Airline options
 set laststatus=2

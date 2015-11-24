@@ -7,7 +7,7 @@ To get set up run:
 ```console
 $ cd ~/
 $ git clone --recursive https://github.com/Squab/.vim.git .vim
-$ ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
+$ ln -sf $HOME/.vim/vimrc $HOME/vimrc
 ```
 
 or `curl -L http://bit.do/timsimvim | sh`
@@ -26,3 +26,8 @@ Updating submodules:
 - [Great link for working with Fugitive](http://vimcasts.org/episodes/fugitive-vim-working-with-the-git-index/)
 - In `:Gdiff`: `:diffput` to add changes from the working copy. Then `:w` in the index.
 ![Gdiff things](http://vimcasts.org/images/blog/diffget-diffput-matrix.png)
+
+## Neovim
+
+Neovim can be installed with `install-neovim.sh`, it'll be built because I couldn't find a package for Debian. It'll
+set up the appropriate symlinks as well. To get true colors, the alias for vim should look like: `alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'`
