@@ -6,11 +6,10 @@ To get set up run:
 
 ```console
 $ cd ~/
-$ git clone --recursive https://github.com/Squab/.vim.git .vim
+$ git clone --recursive https://github.com/TimSimmons/.vim.git .vim
 $ ln -sf $HOME/.vim/vimrc $HOME/vimrc
+$ ln -sf $HOME/.vim/vimrc $HOME/.vim/init.vim
 ```
-
-or `curl -L http://bit.do/timsimvim | sh`
 
 ## Git Submodules
 
