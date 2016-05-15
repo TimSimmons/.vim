@@ -1,10 +1,11 @@
 #/bin/sh
 
 # Dependencies
-sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
 git clone https://github.com/neovim/neovim.git
 cd neovim
+git checkout 4a1c36e953559382362b79be7630a64163c43ef2
 
 make
 make install
