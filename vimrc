@@ -3,6 +3,8 @@ execute pathogen#infect()
 " move to beginning/end of line
 nnoremap B ^
 nnoremap E $
+vnoremap B ^
+vnoremap E $
 
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
@@ -37,13 +39,17 @@ nnoremap <Leader>ww :%s/\s\+$//e<CR>
 
 " colors
 set background=dark
-colorscheme tim
+" colorscheme tim
+colorscheme desert
 
 " CtrlP options
 let g:ctrlp_map = '<c-p>' "CtrlP Mapping
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_show_hidden = 1
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|venv)$'
 
 " Move to the previous buffer with "gp"
 nnoremap gp :bp<CR>
