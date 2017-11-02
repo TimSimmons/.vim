@@ -1,5 +1,8 @@
 execute pathogen#infect()
 
+filetype plugin indent on
+syntax on
+
 " move to beginning/end of line
 nnoremap B ^
 nnoremap E $
