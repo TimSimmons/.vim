@@ -89,3 +89,5 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
 autocmd FileType make setlocal noexpandtab
+
+set directory=~/.vim/tmp

@@ -9,6 +9,7 @@ $ cd ~/
 $ git clone --recursive https://github.com/TimSimmons/.vim.git .vim
 $ ln -sf $HOME/.vim/vimrc $HOME/vimrc
 $ ln -sf $HOME/.vim/vimrc $HOME/.vim/init.vim
+$ mkdir -p .vim/tmp
 ```
 
 ## Git Submodules
