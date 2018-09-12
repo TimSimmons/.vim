@@ -90,4 +90,8 @@ nnoremap <C-Right> :tabnext<CR>
 
 autocmd FileType make setlocal noexpandtab
 
+" tmp files
 set directory=~/.vim/tmp
+
+" rust.vim things
+let g:rustfmt_autosave = 1
