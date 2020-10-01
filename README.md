@@ -5,11 +5,13 @@ My vim dot files. the `.vimrc` file is saved to [.vimrc](https://github.com/Squa
 To get set up run:
 
 ```console
-$ cd ~/
-$ git clone --recursive https://github.com/TimSimmons/.vim.git .vim
-$ ln -sf $HOME/.vim/vimrc $HOME/vimrc
-$ ln -sf $HOME/.vim/vimrc $HOME/.vim/init.vim
-$ mkdir -p .vim/tmp
+cd ~/
+git clone --recursive https://github.com/TimSimmons/.vim.git .vim
+ln -sf $HOME/.vim/vimrc $HOME/vimrc
+ln -sf $HOME/.vim/vimrc $HOME/.vim/init.vim
+mkdir -p .vim/tmp
+mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
+ln -s ~/.vim $XDG_CONFIG_HOME/nvim
 ```
 
 ## Git Submodules
