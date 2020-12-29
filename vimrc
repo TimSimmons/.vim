@@ -83,6 +83,9 @@ let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
+" ansible-vim
+let g:ansible_unindent_after_newline = 0
+
 " multiple cursors
 let g:multi_cursor_exit_from_insert_mode = 0
 nnoremap <C-Left> :tabprevious<CR>
