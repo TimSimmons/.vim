@@ -1,17 +1,11 @@
 # .vim
 
-My vim dot files. the `.vimrc` file is saved to [.vimrc](https://github.com/Squab/.vim/blob/master/.vimrc).
-
 To get set up run:
 
 ```console
 cd ~/
 git clone --recursive https://github.com/TimSimmons/.vim.git .vim
-ln -sf $HOME/.vim/vimrc $HOME/vimrc
-ln -sf $HOME/.vim/vimrc $HOME/.vim/init.vim
-mkdir -p .vim/tmp
-mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
-ln -s ~/.vim $XDG_CONFIG_HOME/nvim
+make install
 ```
 
 ## Git Submodules
@@ -19,17 +13,18 @@ ln -s ~/.vim $XDG_CONFIG_HOME/nvim
 To add a submodule:
 `git submodule add https://github.com/bling/vim-airline.git bundle/vim-airline`
 
-Updating submodules:
-`git submodule foreach git pull origin master`
-
-## Fugitive Things
-
-- `Ctrl+W x 2` to change buffers in a `:Gdiff`
-- [Great link for working with Fugitive](http://vimcasts.org/episodes/fugitive-vim-working-with-the-git-index/)
-- In `:Gdiff`: `:diffput` to add changes from the working copy. Then `:w` in the index.
-![Gdiff things](http://vimcasts.org/images/blog/diffget-diffput-matrix.png)
-
-## Neovim
-
-Neovim can be installed with `install-neovim.sh`, it'll be built because I couldn't find a package for Debian. It'll
-set up the appropriate symlinks as well. To get true colors, the alias for vim should look like: `alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'`
+## Plugins Used
+* [github.com/pearofducks/ansible-vim](https://github.com/pearofducks/ansible-vim)
+* [github.com/ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
+* [github.com/rust-lang/rust.vim](https://github.com/rust-lang/rust.vim.git)
+* [github.com/ervandew/supertab](https://github.com/ervandew/supertab.git)
+* [github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
+* [github.com/ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
+* [github.com/tpope/vim-five](https://github.com/tpope/vim-fugitive)
+* [github.com/airblade/vimgutter.git](https://github.com/airblade/vim-gitgutter.git)
+* [github.com/fatih/vim-go](https://github.com/fatih/vim-go.git)
+* [github.com/fatih/vim-hclfmt](https://github.com/fatih/vim-hclfmt.git)
+* [github.com/jremmen/vim-ripgrep](https://github.com/jremmen/vim-ripgrep)
+* [github.com/tpope/vim-sensible](https://github.com/tpope/vim-sensible.git)
+* [github.com/mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi)
+* [github.com/liuchengxu/vim-which-key](https://github.com/liuchengxu/vim-which-key.git)
